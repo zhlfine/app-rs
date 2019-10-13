@@ -1,0 +1,9 @@
+
+[fullsync_subscriber]
+type = "query_list"
+sql = "select subscriber_id, subscriber_location_id from cloud_subscriber_devices where subscriber_id = '${ABC}'"
+
+[fullsync_device]
+type = "query_list"
+sql = "select _id, device_id from cloud_devices where id = '${ABC}' limit {{a}} offset {{b}}"
+abc = true
