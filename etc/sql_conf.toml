@@ -1,9 +1,9 @@
 
-[fullsync_subscriber]
+[sql1]
 type = "query_list"
-sql = "select subscriber_id, subscriber_location_id from cloud_subscriber_devices where subscriber_id = '${ABC}'"
+sql = "select id, name from student where grade = '${ABC}'"
 
-[fullsync_device]
+[sql2]
 type = "query_list"
-sql = "select _id, device_id from cloud_devices where id = '${ABC}' limit {{a}} offset {{b}}"
-abc = true
+sql = "select id, name from student where grade = '${ABC}' limit {{a}} offset {{b}}"
+
